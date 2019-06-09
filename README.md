@@ -17,4 +17,18 @@ install two sets of dependencies.
 
 3. cd to client directory and then do npm install
 
+
+
+installing redis with homebrew
+
+4. brew install redis
+
+5. brew services start redis
+
+check whether it's been installed 
+
+6. redis-cli ping
+
+(you should see 'pong' message)
+
 Starting project for a course on Advanced Node @ Udemy
