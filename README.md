@@ -31,4 +31,12 @@ check whether it's been installed
 
 (you should see 'pong' message)
 
+
+Tip ! When testing with JEST
+
+1. Make sure you run the dev server berfore testing. 
+
+
+
+
 Starting project for a course on Advanced Node @ Udemy

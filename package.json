@@ -9,7 +9,8 @@
     "client": "npm run start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "build": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",
-    "heroku-postbuild": "npm run build"
+    "heroku-postbuild": "npm run build",
+    "test": "jest"
   },
   "author": "",
   "license": "ISC",
@@ -20,7 +21,7 @@
     "cookie-session": "^2.0.0-beta.2",
     "express": "^4.15.3",
     "handlebars": "^4.1.2",
-    "jest": "^22.1.4",
+    "jest": "24.8.0",
     "js-yaml": "^3.13.1",
     "migrate-mongoose": "^3.2.2",
     "mongoose": "^4.11.1",
@@ -30,6 +31,7 @@
     "path-parser": "^2.0.2",
     "puppeteer": "^1.17.0",
     "redis": "^2.8.0",
+    "request": "^2.88.0",
     "sshpk": "^1.16.1",
     "uuid": "^3.2.1"
   }
