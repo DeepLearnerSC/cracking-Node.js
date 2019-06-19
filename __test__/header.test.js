@@ -19,7 +19,16 @@ afterEach(async () => {
 })
 
 //console.log("sdf")
-test('We can launch a browser', async () => {
+test('the header has the correct text', async () => {
     const text = await page.$eval('a.brand-logo', el => el.innerHTML);
     expect(text).toEqual('Blogster');
+})
+
+test('clicking login starts oauth flow', async () => {
+    await page.click('.right a');
+
+    const url = await page.url();
+
+    console.log(url)
+    expect(url).toMatch(/accounts\.google\.com/);
 })
