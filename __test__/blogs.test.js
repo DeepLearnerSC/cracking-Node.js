@@ -18,9 +18,9 @@ describe('When logged in', async () => {
     });
 
     test('can see blog create form', async () => {
-    const label = await page.getContentsOf('form label');
+        const label = await page.getContentsOf('form label');
 
-    expect(label).toEqual('Blog Title');
+        expect(label).toEqual('Blog Title');
     });
 
     describe('And using valid inputs', async () => {
@@ -63,27 +63,27 @@ describe('When logged in', async () => {
     });
 });
 
-describe('User is not logged in', async () => {
+describe('User is not logged in', async () => { 
     const actions = [
-      {
-        method: 'get',
-        path: '/api/blogs'
-      },
-      {
-        method: 'post',
-        path: '/api/blogs',
-        data: {
-          title: 'T',
-          content: 'C'
+        {
+          method: 'get',
+          path: '/api/blogs'
+        },
+        {
+          method: 'post',
+          path: '/api/blogs',
+          data: {
+            title: 'Title',
+            content: 'Content'
+          }
         }
-      }
-    ];
-  
+      ];
+    
     test('Blog related actions are prohibited', async () => {
-      const results = await page.execRequests(actions);
-  
-      for (let result of results) {
-        expect(result).toEqual({ error: 'You must log in!' });
-      }
-    });
-  });
+        const results = await page.execRequests(actions);
+
+        for (let result of results) {
+            expect(result).toEqual({ error: 'You must log in!' });
+        }
+    });    
+}); 
