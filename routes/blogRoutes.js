@@ -27,6 +27,7 @@ module.exports = app => {
     const blog = new Blog({
       title,
       content,
+      imageUrl,
       _user: req.user.id
     });
 
