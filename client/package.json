@@ -21,7 +21,7 @@
     "materialize-css": "^0.100.2",
     "no-case": "^2.3.2",
     "react": "^16.0.0-alpha.13",
-    "react-dev-utils": "^9.0.1",
+    "react-dev-utils": "^11.0.4",
     "react-dom": "^16.0.0-alpha.13",
     "react-redux": "^5.0.5",
     "react-router-dom": "^4.1.1",
