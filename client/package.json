@@ -15,7 +15,7 @@
     "forwarded": "^0.1.2",
     "fresh": "^0.5.2",
     "fstream": "^1.0.12",
-    "handlebars": "^4.1.2",
+    "handlebars": "^4.7.7",
     "js-yaml": "^3.13.1",
     "macaddress": "^0.2.9",
     "materialize-css": "^0.100.2",
